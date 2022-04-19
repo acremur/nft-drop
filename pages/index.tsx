@@ -11,17 +11,17 @@ interface Props {
 const Home = ({ collections }: Props) => {
   console.log(collections)
   return (
-    <div className="mx-auto flex min-h-screen max-w-7xl flex-col py-5 px-5 2xl:px-0">
+    <div className="mx-auto flex min-h-screen max-w-7xl flex-col py-10 px-10 2xl:px-0">
       <Head>
         <title>NTF Drop</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="mb-5 text-4xl font-extralight">
+      <h1 className="mb-10 text-4xl font-extralight">
           The <span className="font-extrabold underline decoration-pink-600/50">JOSE</span> NFT Market Place
       </h1>
 
-      <main className='bg-slate-100 p-5 shadow-xl shadow-rose-400/20'>
+      <main className='bg-slate-100 p-10 shadow-xl shadow-rose-400/20'>
         <div className='grid space-x-3 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4'>
           {collections.map(collection => (
             <Link href={`/nft/${collection.slug.current}`}>
